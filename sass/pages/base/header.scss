@@ -1,0 +1,38 @@
+   header {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   & h1 {
+      font-size: 24px;
+      text-align: center;
+      font-family: $font-primary;
+   }   
+   & p {
+      font-size: 18px;
+      text-align: center;
+   }
+}
+
+.header-menu {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   margin-bottom: 5px;
+   & .fa-arrow-left {
+       margin-left: 5px;
+      font-size: 25px;
+      text-decoration: none;
+      color: black;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1980px) {
+   .header-menu {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   }
+}

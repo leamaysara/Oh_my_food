@@ -1,0 +1,22 @@
+.button-pink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: $font-primary;
+    font-size: 16px;
+
+    color: white;
+    background: linear-gradient(180deg, #e370da, #a05adc);
+    box-shadow: 1px 2px 5px rgba(227, 112, 218, 0.35);
+
+    cursor: pointer;
+    filter: saturate(0.82);
+    transition: box-shadow 300ms, filter 300ms;
+}
+
+.button-pink:hover {
+    filter: saturate(1.1);
+    box-shadow: 2px 3px 10px rgba(227, 112, 218, 0.50);
+}

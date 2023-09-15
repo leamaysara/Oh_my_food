@@ -13,7 +13,7 @@ body {
     margin-top: 15px;
 }
 
-.location {
+.localisation {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,11 +25,10 @@ body {
     font-weight: 500;
     font-family: $font-primary;
     padding: 25px 20px;
-    gap: 17px;
-    color: #353535;
+
     & i {
         margin-right: 5px;
-        color: #353535;
+        color: black;
     }
 }
 
@@ -39,30 +38,31 @@ body {
     align-items: center;
     vertical-align: middle;
     background-color: #F6F6F6;
-    padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.function {
+.fonction {
     text-align: center;
 }
 
-.function-list {
+.fonction-list {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
     margin: 0 15px;
     counter-reset: fonction_list;
-    & .function-propriety {
+    & .fonction-propriété {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 60px;
+
         cursor: pointer;
-        position: relative;
+
+        position: relative; // Requis par la puce de numérotation
     }
 
-    & .function-propriety::before {
+    & .fonction-propriété::before {
         counter-increment: fonction_list;
         content: counter(fonction_list);
         position: absolute;
@@ -84,7 +84,7 @@ body {
         background-color: $color-primary;
     }
 
-    & .function-propriety:hover i {
+    & .fonction-propriété:hover i {
         opacity: 1;
         color: $color-primary
     }
@@ -102,7 +102,9 @@ body {
     }
 }
 
-.function-propriety {
+
+
+.fonction-propriété {
     align-content: center;
     border-radius: 20px;
     background-color: #f6f6f6;
@@ -127,29 +129,31 @@ body {
 }
 
 .card {
+    position: relative; // Requis pour le tag nouveau
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 16px;
     margin-bottom: 25px;
-    background-color: white;
     border: 1px solid white;
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px #e7e7e7;
-    position: relative;
 
     & .card_header {
         position: relative;
+
         & h3 {
             margin: 5px;
             margin-left: 20px;
             font-style: normal;
         }
+    
         & p {
             margin: 5px;
             margin-left: 20px;
         }
+    
         & .heart {
             font-size: 26px;
             position: absolute;
@@ -159,11 +163,11 @@ body {
     }
 }
 
-/*** Badge Nouveau ***/
+/* Badge Nouveau */
 .card[data-new]::before {
     content: "Nouveau";
     position: absolute;
-    top: 13px;
+    top: 15px;
     right: 18px;
 
     font-family: $font-primary;
@@ -197,14 +201,14 @@ body {
     object-fit: cover;
 }
 
-/*** Version Tablet ***/
+// Version Tablette
 @media (min-width: 768px){
     .logo {
         width: 30%;
         margin-top: 15px;
     }
 
-    .location {
+    .localisation {
         font-size: 22px;
     }
 
@@ -212,17 +216,19 @@ body {
         font-size: 22px;
     }
 
-    .function {
+    .fonction {
         text-align: center;
+
         & h2 {
             margin-left: 40px;
         }
     }
 
-    .function-list p {
+    .fonction-list p {
         margin-left: auto;
         margin-right: auto;
         font-size: 24px;
+
         & i {
             font-size: 24px;
             margin-right: 25px;
@@ -237,6 +243,7 @@ body {
         align-items: center;
         vertical-align: middle;
         gap: 20px;
+
         & h2 {
             width: 100%;
             margin-left: 5%;
@@ -260,7 +267,7 @@ body {
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 993px){
     .logo {
         width: 30%;
         margin-top: 30px;
@@ -269,39 +276,37 @@ body {
     .intro {
         & h1 {
             font-size: 40px;
-            padding: 0 30px 0 30px;
         }
 
         & p {
             font-size: 18px;
         }
     }
-
-    .function{
+    .fonction{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0;
+       
         & h2{
             width: 100%;
         }
     }
-
-    .function-propriety{
+    .fonction-propriété{
         justify-content: space-around;
         width: 25%;
     }
-
-    .function-list {
+    .fonction-list{
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
+
         & p {
             font-size: 16px;
         }
+        
     }
-
-    .function-list .function-propriety {
+    .fonction-list .fonction-propriété{
         gap: 0px;
         justify-content: flex-start;
     }
@@ -313,15 +318,15 @@ body {
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-    }
 
+
+    }
     .restaurants h2 {
         width: 100%;
-        justify-content: flex-start;
-        padding-left: 20px;
     }
 
     .card {
         width: 40%;
     }
+
 }
