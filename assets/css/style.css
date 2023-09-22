@@ -42,7 +42,7 @@ body {
 
 @keyframes fadeOut {
   to {
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -81,13 +81,6 @@ body {
 .content {
   opacity: 1; /* Le contenu est initialement invisible */
   transition: opacity 1s ease-in-out; /* Animation de transition pour l'opacité */
-}
-.overlay.finished {
-  pointer-events: none; /* Permet les interactions avec le contenu sous l'overlay */
-}
-
-.overlay.finished + .content {
-  opacity: 1; /* Rend le contenu visible une fois l'overlay caché */
 }
 
 .button-pink {
