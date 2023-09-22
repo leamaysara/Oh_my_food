@@ -1,7 +1,8 @@
-@import "./utils/variables";
-@import "./utils/typo";
-@import "./components/button-pink";
-@import "./components/heart";
-@import "./pages/base/header";
-@import "./pages/base/footer";
-@import "./pages/home/index";
+@import "./utils/variables.scss";
+@import "./utils/typo.scss";
+@import "./components/button-pink.scss";
+@import "./components/heart.scss";
+@import "./pages/base/header.scss";
+@import "./pages/base/footer.scss";
+@import "./pages/home/index.scss";
+@import "./components/loader.scss"
