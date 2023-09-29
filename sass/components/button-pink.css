@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.button-pink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(180deg, #e370da, #a05adc);
+  box-shadow: 1px 2px 5px rgba(227, 112, 218, 0.35);
+  cursor: pointer;
+  filter: saturate(0.82);
+  transition: box-shadow 300ms, filter 300ms;
+}
+
+.button-pink:hover {
+  filter: saturate(1.1);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.fill__heart {
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.fill__heart .fa-regular {
+  color: black;
+  font-size: 22px;
+}
+
+.fill__heart .fa-regular:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}/*# sourceMappingURL=button-pink.css.map */

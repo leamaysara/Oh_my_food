@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+}
+
+.img-restaurant {
+    height: calc(276px - 60px);
+}
+.img-restaurant > img {
+    position: absolute;
+    height: 276px;
+    width: 100%;
+    object-fit: cover;
+}
+.menu {
+    position: relative; // Met le contenu au dessus de l'image
+    padding-top: 15px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 25px 25px 0 0;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h1 {
+        font-family: $font-secondary;
+    }
+}
+.title-restaurant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    & i {
+        font-size: 22px;
+    }
+}
+// Animation d'apparition 
+@for $i from 1 through 5 {
+    .meal:nth-child(#{$i}) .card-menu {
+        animation-delay: calc($i * 200ms);
+    }
+}
+.meal {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+
+    & .title-meal {
+        position: relative; // Requis pour la bordure du dessous
+        width: 100%;
+        font-family: $font-primary;
+    }
+    & .title-meal::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+
+        width: 40px;
+        height: 2px;
+
+        background-color: $color-tertiary;
+    }
+    @keyframes card-anim {
+        0% {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    & .card-menu {
+        transform: translateX(100px);
+        opacity: 0;
+        animation: card-anim 300ms ease-in forwards;
+        width: 100%;
+
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
+        & h3 {
+            margin: 0;
+            font-size: 18px;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        & p {
+            margin: 0;
+            font-size: 16px;
+
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        & div:first-child {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 11px;
+            padding-right: 0;
+            gap: 5px;
+        }
+        & .price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 16px;
+            font-family: $font-primary;
+            font-weight: 500;
+        }
+        & i {
+            width: 6px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            border-top-right-radius: inherit;
+            border-bottom-right-radius: inherit;
+            color: white;
+            background-color: $color-tertiary;
+            transition: all 300ms;
+        }
+        &:hover i {
+            opacity: 1;
+            width: 59px;
+        }
+    }
+}
+
+
+// Version Desktop
+@media (min-width: 993px) {
+    .menu {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 25%;
+    }
+    .meal {
+        width: 60%;
+    }
+}

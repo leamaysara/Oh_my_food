@@ -5,4 +5,15 @@
 @import "./pages/base/header.scss";
 @import "./pages/base/footer.scss";
 @import "./pages/home/index.scss";
-@import "./components/loader.scss"
+@import "./components/loader.scss";
+@import "./pages/restaurants/restaurants-menu.scss";
+
+@import url(./utils/variables.scss);
+@import url(./utils/typo.scss);
+@import url(./components/button-pink.scss);
+@import url(./pages/base/header.scss);
+@import url(./components/heart.scss);
+@import url(./pages/base/footer.scss);
+@import url(./pages/home/index.scss);
+@import url(./components/loader.scss);
+@import url(./utils/typo.scss);

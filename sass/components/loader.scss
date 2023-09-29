@@ -42,15 +42,16 @@ body {
       &:nth-child(10) { animation-delay: 1.0s; }
     }
   }
-}
 
-@keyframes fadeOut {
-  to {
-    display:none;
+  @keyframes fadeOut {
+    to {
+      display: none;
+    }
   }
-}
 
-.content {
-  opacity: 1; /* Le contenu est initialement invisible */
-  transition: opacity 1s ease-in-out; /* Animation de transition pour l'opacité */
+  .content {
+    opacity: 1; /* Le contenu est initialement invisible */
+    transition: opacity 1s ease-in-out; /* Animation de transition pour l'opacité */
+  }
+
 }
