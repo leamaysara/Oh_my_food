@@ -1,10 +1,10 @@
-@import "/sass/utils/variables.scss";
-@import "/sass/utils/typo.scss";
-@import "/sass/components/button-pink.scss";
-@import "/sass/components/heart.scss";
-@import "/sass/pages/base/header.scss";
-@import "/sass/pages/base/footer.scss";
-@import "/sass/components/loader.scss";
+@import "../../utils/variables.scss";
+@import "../../utils/typo.scss";
+@import "../../components/button-pink.scss";
+@import "../../components/heart.scss";
+@import "../../pages/base/header.scss";
+@import "../../pages/base/footer.scss";
+@import "../../components/loader.scss";
 
 main {
     width: auto;
@@ -94,7 +94,7 @@ body {
 
     & .function-propriety:hover i {
         opacity: 1;
-        color: $color-primary
+        color: $color-primary;
     }
 
     & p {
@@ -150,6 +150,8 @@ body {
 
     & .card_header {
         position: relative;
+        display: flex;
+        justify-content: space-between;
         & h3 {
             margin: 5px;
             margin-left: 20px;

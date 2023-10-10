@@ -1,19 +1,9 @@
-@import "./utils/variables.scss";
-@import "./utils/typo.scss";
-@import "./components/button-pink.scss";
-@import "./components/heart.scss";
-@import "./pages/base/header.scss";
-@import "./pages/base/footer.scss";
-@import "./pages/home/index.scss";
-@import "./components/loader.scss";
-@import "./pages/restaurants/restaurants-menu.scss";
-
-@import url(./utils/variables.scss);
-@import url(./utils/typo.scss);
-@import url(./components/button-pink.scss);
-@import url(./pages/base/header.scss);
-@import url(./components/heart.scss);
-@import url(./pages/base/footer.scss);
-@import url(./pages/home/index.scss);
-@import url(./components/loader.scss);
-@import url(./utils/typo.scss);
+@use"./utils/variables.scss";
+@use "./utils/typo.scss";
+@use "./components/button-pink.scss";
+@use "./components/heart.scss";
+@use "./pages/base/header.scss";
+@use "./pages/base/footer.scss";
+@use "./pages/home/index.scss";
+@use "./components/loader.scss";
+@use "./pages/restaurants/restaurants-menu.scss";

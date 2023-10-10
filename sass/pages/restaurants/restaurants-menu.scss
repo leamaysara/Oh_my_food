@@ -1,3 +1,6 @@
+@import "../../utils/variables.scss";
+@import "../../utils/typo.scss";
+
 body {
     margin: 0;
 }
@@ -12,7 +15,7 @@ body {
     object-fit: cover;
 }
 .menu {
-    position: relative; // Met le contenu au dessus de l'image
+    position: relative; //Contenu au dessus de l'image//
     padding-top: 15px;
     width: 100%;
     background-color: #f2f2f2;
@@ -39,12 +42,27 @@ body {
         font-size: 22px;
     }
 }
-// Animation d'apparition 
-@for $i from 1 through 5 {
-    .meal:nth-child(#{$i}) .card-menu {
-        animation-delay: calc($i * 200ms);
-    }
-}
+//Animation d'apparition//
+.meal:nth-child(1) .card-menu {
+    animation-delay: 200ms;
+  }
+  
+.meal:nth-child(2) .card-menu {
+    animation-delay: 300ms;
+  }
+  
+.meal:nth-child(3) .card-menu {
+    animation-delay: 400ms;
+  }
+  
+.meal:nth-child(4) .card-menu {
+    animation-delay: 500ms;
+  }
+  
+.meal:nth-child(5) .card-menu {
+    animation-delay: 600ms;
+  }
+
 .meal {
     width: 90%;
 
@@ -56,7 +74,7 @@ body {
     margin-bottom: 28px;
 
     & .title-meal {
-        position: relative; // Requis pour la bordure du dessous
+        position: relative; //Requis pour la bordure verte//
         width: 100%;
         font-family: $font-primary;
     }
@@ -152,7 +170,7 @@ body {
 }
 
 
-// Version Desktop
+//Desktop//
 @media (min-width: 993px) {
     .menu {
         width: 75%;
