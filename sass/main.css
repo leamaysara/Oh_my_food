@@ -22,7 +22,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
@@ -54,7 +56,7 @@ p {
   align-items: center;
   border-radius: 25px;
   padding: 12px 24px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: white;
   background: linear-gradient(180deg, #e370da, #a05adc);
@@ -189,7 +191,7 @@ header p {
   color: black;
 }
 
-@media (min-width: 993px) and (max-width: 1980px) {
+@media (min-width: 1024px) {
   .header-menu {
     width: 70%;
     margin-left: auto;
@@ -249,7 +251,7 @@ footer i {
   gap: 10px;
 }
 
-@media (min-width: 993px) and (max-width: 1980px) {
+@media (min-width: 1024px) {
   footer {
     flex-direction: row;
     justify-content: flex-end;
@@ -294,7 +296,7 @@ p {
   align-items: center;
   border-radius: 25px;
   padding: 12px 24px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: white;
   background: linear-gradient(180deg, #e370da, #a05adc);
@@ -429,7 +431,7 @@ header p {
   color: black;
 }
 
-@media (min-width: 993px) and (max-width: 1980px) {
+@media (min-width: 1024px) {
   .header-menu {
     width: 70%;
     margin-left: auto;
@@ -489,7 +491,7 @@ footer i {
   gap: 10px;
 }
 
-@media (min-width: 993px) and (max-width: 1980px) {
+@media (min-width: 1024px) {
   footer {
     flex-direction: row;
     justify-content: flex-end;
@@ -649,7 +651,7 @@ body {
   flex-direction: column;
   padding: 0 15px;
   margin: 0 15px;
-  counter-reset: fonction_list;
+  counter-reset: function_list;
 }
 .function-list .function-propriety {
   display: flex;
@@ -660,8 +662,8 @@ body {
   position: relative;
 }
 .function-list .function-propriety::before {
-  counter-increment: fonction_list;
-  content: counter(fonction_list);
+  counter-increment: function_list;
+  content: counter(function_list);
   position: absolute;
   left: 0;
   top: 50%;
@@ -670,7 +672,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, sans-serif;
   font-weight: 500;
   font-size: 16px;
   width: 30px;
@@ -1168,7 +1170,7 @@ body {
   width: 59px;
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1024px) {
   .menu {
     width: 75%;
     margin-left: auto;

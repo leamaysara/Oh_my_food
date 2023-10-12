@@ -60,7 +60,7 @@ body {
     flex-direction: column;
     padding: 0 15px;
     margin: 0 15px;
-    counter-reset: fonction_list;
+    counter-reset: function_list;
     & .function-propriety {
         display: flex;
         flex-direction: row;
@@ -71,8 +71,8 @@ body {
     }
 
     & .function-propriety::before {
-        counter-increment: fonction_list;
-        content: counter(fonction_list);
+        counter-increment: function_list;
+        content: counter(function_list);
         position: absolute;
         left: 0;
         top: 50%;
@@ -82,7 +82,7 @@ body {
         align-items: center;
         justify-content: center;
         color: white;
-        font-family: "Roboto", sans-serif;
+        font-family: $font-primary, sans-serif;
         font-weight: 500;
         font-size: 16px;
 

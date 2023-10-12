@@ -183,7 +183,7 @@ body {
   width: 59px;
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1024px) {
   .menu {
     width: 75%;
     margin-left: auto;
