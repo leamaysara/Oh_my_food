@@ -261,8 +261,12 @@ body {
   padding-bottom: 40px;
 }
 
-.function {
-  text-align: center;
+.function h2 {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 25px;
+  margin-left: 45px;
+  width: 100%;
 }
 
 .function-list {
@@ -333,6 +337,8 @@ body {
   align-items: center;
 }
 .restaurants h2 {
+  display: flex;
+  justify-content: flex-start;
   padding-top: 25px;
   margin-left: 45px;
   width: 100%;
@@ -424,6 +430,8 @@ body {
     text-align: center;
   }
   .function h2 {
+    display: flex;
+    justify-content: flex-start;
     padding-top: 25px;
     margin-left: 45px;
     width: 100%;
@@ -448,9 +456,9 @@ body {
   }
   .restaurants h2 {
     width: 100%;
-    margin-left: 5%;
-    justify-content: flex-start;
-    padding-left: 20px;
+    padding-top: 25px;
+    margin-left: 45px;
+    width: 100%;
   }
   .card {
     width: 40%;
@@ -485,6 +493,8 @@ body {
     gap: 0;
   }
   .function h2 {
+    display: flex;
+    justify-content: flex-start;
     padding-top: 25px;
     margin-left: 45px;
     width: 100%;
@@ -514,6 +524,8 @@ body {
     width: 100%;
   }
   .restaurants h2 {
+    display: flex;
+    justify-content: flex-start;
     padding-top: 25px;
     margin-left: 45px;
     width: 100%;

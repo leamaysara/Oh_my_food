@@ -35,8 +35,7 @@ body {
   position: absolute;
   height: 276px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .menu {

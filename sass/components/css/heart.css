@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
+.heart {
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.heart::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 300;
+  content: "\f004";
+}
+
+.heart[aria-checked]::before {
+  opacity: 0;
+}
+
+.heart::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f004";
+  color: #9356DC;
+  opacity: 0;
+  transition: 300ms opacity;
+}
+
+.heart:hover::after,
+.heart[aria-checked]::after {
+  opacity: 1;
+}
+
+.heart[aria-checked]:hover::after {
+  content: "\f7a9";
+  filter: contrast(0.7);
+}/*# sourceMappingURL=heart.css.map */
