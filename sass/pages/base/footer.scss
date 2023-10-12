@@ -1,0 +1,51 @@
+@import "../../utils/variables.scss";
+@import "../../utils/typo.scss";
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    align-items: flex-start;
+    padding: 22px 25px;
+    font-family: $font-primary;
+    font-weight: 700;
+    & img {
+        width: 30%;
+        filter: invert(1);
+        margin-bottom: 15px;
+    }
+    & span { 
+        display: inline-flex;
+        padding-bottom: 15px;
+        color: white;
+        font-size: 16px;
+        gap: 10px;
+    }
+    & a {
+        text-decoration:  none;
+        color: white;
+    }
+}
+
+footer i {
+    color: white;
+    gap: 10px;
+}
+
+@media (min-width: 1024px) {
+    footer {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: baseline;
+        gap: 40px;
+        & img {
+            width: 137px;
+            order: 4;
+            filter: invert(1);
+            margin-top: 15px;
+        }
+        & a{
+            font-weight: bold;
+        }
+    }
+}
